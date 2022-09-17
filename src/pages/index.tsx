@@ -22,7 +22,7 @@ export default function Home({teamList}) {
 
 
   return (
-    <div>
+    <div className={styles.container}>
       <h1 className={styles.title}>Brazil FC</h1>
       <ul>
       {teams.map(team => 

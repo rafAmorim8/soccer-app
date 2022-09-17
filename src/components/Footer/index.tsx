@@ -2,7 +2,7 @@ import styles from './styles.module.scss';
 
 export function Footer(){
   return(
-    <footer>
+    <footer className={styles.container}>
       <div>
         <h1>Footer</h1>
       </div>
