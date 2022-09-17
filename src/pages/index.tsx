@@ -39,8 +39,6 @@ export default function Home({teamList}) {
 export const getServerSideProps: GetServerSideProps = async () => {
   const teamList = await getTeams();
   
-  console.log(teamList);
-
   return {
     props: { 
       teamList,
