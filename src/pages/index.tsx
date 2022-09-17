@@ -1,6 +1,8 @@
 import styles from '../styles/home.module.scss';
 
+import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
+
 import { useEffect, useState } from 'react';
 import { GetServerSideProps } from 'next';
 
@@ -23,14 +25,15 @@ export default function Home({teamList}) {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Brazil FC</h1>
-      <ul>
+      <Header />
+      
+      {/* <ul>
       {teams.map(team => 
         <li key={team.id}>
           <img src={team.logo} alt={`${team.name} logo`} />
           <strong>{team.name}</strong>
         </li>)}
-      </ul>
+      </ul> */}
       <Footer />
     </div>
   )
